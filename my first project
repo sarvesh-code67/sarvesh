@@ -1,0 +1,32 @@
+print('Welcome to TEXT ADVENTURE..... a game where u are given a situation and have to choose the options given to you!')
+username = input('pls enter your name: ')
+print('Hello ' , username)
+
+age = input('pls enter your age: ')
+print('You are' , age , 'years old')
+
+choice = input('ARE U WILLING TO RATE THIS GAME AFTER PLAYING YES/NO  ').lower()
+if choice == 'no':
+      print("its fine you can do it later")
+elif choice == 'yes':
+      print('ok thx')
+
+answer =input('your are in a cave and are searching for a treasure chest choose the right path to find the treasure (LEFT/RIGHT)  ').lower()
+if answer == 'left':
+ print('ALAS!!!!!!! you encountered a monster you are surely gone ........ GAME OVER')
+ exit()
+elif answer == 'right':
+    print('HURRAY!!!!!! you escaped the monster which was on the other side......NICE   ')
+
+choice2 = input('choose left or right (again)').lower()
+if choice2 == 'left':
+    print('OH!!!!!!! YOU CHOOSED THE WRONG PATH (SKILL ISSUE) HAHAHAHAHAHAHAHA!!!!!......... YOU LOST')
+    exit()
+elif choice2 == 'right':
+    print("OH NO....YOU ENCOUNTERED THE SAME MONSTER WOULD YOU U LIKE TO RUN OR FIGHT    ")
+
+choice3 = input("choose to run or fight (once again) ")
+if choice3 == 'run' :
+            print("WOW THATS LUCKY.......U ACCIDENTLY FELL DOWN THE PLACE WHERE THE TREASURE IS PLACED YOU WON ")
+elif choice3 == 'fight':
+            print('OPPS WRONG CHOICE Ur TOO WEAK TO FIGHT THE MONSTER......YOU LOST')
